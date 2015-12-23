@@ -6,6 +6,9 @@ I will try to document my journey here. Feel free to join and submit pull reques
 
 Read more about Scala at [www.scala-lang.org](http://www.scala-lang.org/)
 
+## Goals
+The first goal will be to be able to open a Scala project, get syntax highlighting, and be able to compile & run it.
+
 ## Current progress
 * Created project system project and made basic changes for .scala file support
 * Added item template to add new .scala file
