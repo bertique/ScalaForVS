@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D2F7C9D-A639-459C-A6E1-6F94BD6B48F8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scala.tmbundle</RootNamespace>
+    <AssemblyName>Scala.tmbundle</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Commands\Align Assignments.tmCommand" />
+    <None Include="Commands\Compile and run.tmCommand" />
+    <None Include="Commands\Double quoute to triple quote.tmCommand" />
+    <None Include="Commands\Javadoc for line.tmCommand" />
+    <None Include="Commands\new javadoc line.tmCommand" />
+    <None Include="Commands\Package for file.tmCommand" />
+    <None Include="Commands\Run as script.tmCommand" />
+    <None Include="Commands\SBT Code Completion.tmCommand" />
+    <None Include="Commands\Scala Library Documentation.tmCommand" />
+    <None Include="Commands\Scala REPL.tmCommand" />
+    <None Include="Commands\Scala REPL_ Paste selection.tmCommand" />
+    <None Include="Commands\Scala REPL_ Preload file.tmCommand" />
+    <None Include="info.plist" />
+    <None Include="LICENSE" />
+    <None Include="Preferences\Comments.tmPreferences" />
+    <None Include="Preferences\Disable Spellchecking.tmPreferences" />
+    <None Include="Preferences\Enable spellchecking.tmPreferences" />
+    <None Include="Preferences\Highlight pairs %28comments%29.tmPreferences" />
+    <None Include="Preferences\Highlight pairs.tmPreferences" />
+    <None Include="Preferences\Indention rules.tmPreferences" />
+    <None Include="Preferences\Simple Build Tool Symbol List.tmPreferences" />
+    <None Include="Preferences\Standard completions.tmPreferences" />
+    <None Include="Preferences\Symbol List.tmPreferences" />
+    <None Include="Preferences\Typing pairs %28comments%29.tmPreferences" />
+    <None Include="Preferences\Typing pairs.tmPreferences" />
+    <None Include="Preferences\Valid Scaladoc annotations.tmPreferences" />
+    <None Include="README.markdown" />
+    <None Include="Snippets\case class scaffolding.tmSnippet" />
+    <None Include="Snippets\case class.tmSnippet" />
+    <None Include="Snippets\case.tmSnippet" />
+    <None Include="Snippets\class.tmSnippet" />
+    <None Include="Snippets\enumeration.tmSnippet" />
+    <None Include="Snippets\for - Block.tmSnippet" />
+    <None Include="Snippets\for - Yield.tmSnippet" />
+    <None Include="Snippets\if.tmSnippet" />
+    <None Include="Snippets\import mutable_immutable.tmSnippet" />
+    <None Include="Snippets\lambda.tmSnippet" />
+    <None Include="Snippets\left arrow.tmSnippet" />
+    <None Include="Snippets\main.tmSnippet" />
+    <None Include="Snippets\match.tmSnippet" />
+    <None Include="Snippets\method.tmSnippet" />
+    <None Include="Snippets\object with main method.tmSnippet" />
+    <None Include="Snippets\object.tmSnippet" />
+    <None Include="Snippets\println.tmSnippet" />
+    <None Include="Snippets\right arrow.tmSnippet" />
+    <None Include="Snippets\script header.tmSnippet" />
+    <None Include="Snippets\shortcut - case class.tmSnippet" />
+    <None Include="Snippets\shortcut - class.tmSnippet" />
+    <None Include="Snippets\shortcut - enumeration.tmSnippet" />
+    <None Include="Snippets\shortcut - match.tmSnippet" />
+    <None Include="Snippets\shortcut - object.tmSnippet" />
+    <None Include="Snippets\shortcut - trait.tmSnippet" />
+    <None Include="Snippets\Special_ Return Inside parentheses.tmSnippet" />
+    <None Include="Snippets\toString.tmSnippet" />
+    <None Include="Snippets\trait.tmSnippet" />
+    <None Include="Snippets\try_catch.tmSnippet" />
+    <None Include="Snippets\with.tmSnippet" />
+    <None Include="Support\scala_repl.sh" />
+    <None Include="Support\tests\gtm" />
+    <None Include="Support\tests\input\class.scala" />
+    <None Include="Support\tests\input\identifiers.scala" />
+    <None Include="Support\tests\input\import.scala" />
+    <None Include="Support\tests\input\import2.scala" />
+    <None Include="Support\tests\input\import3.scala" />
+    <None Include="Support\tests\input\method.scala" />
+    <None Include="Support\tests\output\class.output" />
+    <None Include="Support\tests\output\identifiers.output" />
+    <None Include="Support\tests\output\import.output" />
+    <None Include="Support\tests\output\import2.output" />
+    <None Include="Support\tests\output\import3.output" />
+    <None Include="Support\tests\output\method.output" />
+    <None Include="Support\tests\README" />
+    <None Include="Support\tests\run_tests.rb" />
+    <None Include="Syntaxes\Scala.tmLanguage" />
+    <None Include="Syntaxes\Simple Build Tool.tmLanguage" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
