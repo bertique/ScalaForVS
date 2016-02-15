@@ -10,9 +10,14 @@ Read more about Scala at [www.scala-lang.org](http://www.scala-lang.org/)
 The first goal will be to be able to open a Scala project, get syntax highlighting, and be able to compile & run it.
 
 ## Current progress
-* Created project system project and made basic changes for .scala file support
-* Added item template to add new .scala file
-* Added Build project for adding scala compiler support
+### Done
+* Syntax highlighting through [Scala TextMate bundle by mads379](https://github.com/mads379/scala.tmbundle)
+* Wix installer
+
+### Next
+* Add project and item templates to installer
+* Add project system support for .scala files
+* Add build support for scala compiler
 
 ## Resources
 * [VS Project system documentation](https://github.com/Microsoft/VSProjectSystem)
