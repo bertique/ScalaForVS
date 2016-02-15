@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated manually with heat: heat dir <tmbundle directory> -o <ProjectFolder>Scala\Tmbundle.wxs -scom -sfrag -srd -sreg -gg -cg Scala.tmbundle-->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmp396CB075FD22F20C53C11BB93C0A3F8D" Guid="{1AE5D56D-FC9E-4E1F-A45D-1C94F42A3533}">
+                <File Id="fil81ADC92BEF3FCAE49243083BB4800806" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\info.plist" />
+            </Component>
+            <Component Id="cmp68770A47D10856CE6EAA0D95AE3E9E43" Guid="{1B9FF76E-9A41-4ED7-B168-B20BA7F55FF6}">
+                <File Id="fil4F23C51A6981A812BE528E56E199FC6D" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\LICENSE" />
+            </Component>
+            <Component Id="cmpFBA57D98C9709C1D54FCD23D5ADE4A5B" Guid="{B0E0A11D-2E9A-42AC-B2BC-8615C9830489}">
+                <File Id="filFBE36D02AA18C5657825F732573DC422" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\README.markdown" />
+            </Component>
+            <Directory Id="dirAE8DFE25EB44F8B75D0CB88EAC7DF53D" Name="Commands">
+                <Component Id="cmpBC07E6BA216B0565B4692312C50F7805" Guid="{B92B80A2-1D22-4B1A-AE7A-1E976FB61F88}">
+                    <File Id="filF2ADAAC077DC590FA872FA61FCB16211" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Align Assignments.tmCommand" />
+                </Component>
+                <Component Id="cmp6E0177428401F4E9ABD90DFAC9CDE344" Guid="{C5409E06-8FA5-48DA-9960-DCF1626319F4}">
+                    <File Id="filC4502CF511C65598A1CA853C65A7E920" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Compile and run.tmCommand" />
+                </Component>
+                <Component Id="cmp41568F7CFF27ACFA948508FC0F9ECEF4" Guid="{EB208746-5DEA-4312-82AA-3FE19DA7CD3F}">
+                    <File Id="fil956F29D549C1948C4AAA9018CE6EACD0" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Double quoute to triple quote.tmCommand" />
+                </Component>
+                <Component Id="cmp64EB83835F97C63D86ACCFB3724AF306" Guid="{E0C25959-173B-4D8F-82E8-FADADF65DB1C}">
+                    <File Id="fil9948D212A0175156B66F5900AD0735A1" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Javadoc for line.tmCommand" />
+                </Component>
+                <Component Id="cmp73E222E91FB1529D3972A40F24B531AE" Guid="{8FBED354-9CEC-4B85-B344-E908D80606F3}">
+                    <File Id="filC533F88829FB556B70D5936639AC3624" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\new javadoc line.tmCommand" />
+                </Component>
+                <Component Id="cmp59A65CB33B77F64C4A9B751EEC3FBF3D" Guid="{BC1F615A-C2C9-4280-854A-304042E1EA19}">
+                    <File Id="fil349966B576FFFAB367C8CE6392BA5172" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Package for file.tmCommand" />
+                </Component>
+                <Component Id="cmp1E1D15B933E0A5E90BEE92C9888C9604" Guid="{7A1BF5FE-1D26-45B1-A97C-4EF3A27167C7}">
+                    <File Id="fil4361BF4B8D4E56F72442C652A989CAA4" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Run as script.tmCommand" />
+                </Component>
+                <Component Id="cmp5FA01F56431D79E4F327EEB9F626711B" Guid="{4F0D0CCF-C290-48D9-A193-47FA197DCB07}">
+                    <File Id="fil7EF8912D5AC79BEC26B02E70A653808F" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\SBT Code Completion.tmCommand" />
+                </Component>
+                <Component Id="cmpDABB72FE12EB4A33BFB0D04FD5A6B4FB" Guid="{74FF0EE6-EBED-4724-AC30-AA660724E6B5}">
+                    <File Id="fil5A2603F93261C1AA9A71C4B2C451A946" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Scala Library Documentation.tmCommand" />
+                </Component>
+                <Component Id="cmpEB0D1383E8AEF932A04E73CD986570BF" Guid="{731328F4-BE92-44A2-9654-7AA9B69CF3D8}">
+                    <File Id="fil1F6214D4383A79F2C52DA6126652836F" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Commands\Scala REPL.tmCommand" />
+                </Component>
+            </Directory>            
+            <Directory Id="dir82C0F5B347281702D9BD7FDD105B1D40" Name="Preferences">
+                <Component Id="cmp9B9B7997A823CCE63B3C6416017324D9" Guid="{85209DF4-DBC9-42DB-84D6-9B56D3B527A8}">
+                    <File Id="filD2D9001CA4C4015E9AA9A844692A63A4" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Comments.tmPreferences" />
+                </Component>
+                <Component Id="cmp6119168D0748C9D8F4FE4B80AD2E0C9E" Guid="{1374AB26-CF1C-470B-8825-E9F0160A98D0}">
+                    <File Id="fil832523089A9DD9C6DB1390FE28271770" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Disable Spellchecking.tmPreferences" />
+                </Component>
+                <Component Id="cmp143BBA546F8862995203BBEFAE6638BE" Guid="{733A4AB8-835B-4019-8242-B42C469B3C14}">
+                    <File Id="filB718CCA25E92D1CAD3CE9DB8B474DFC1" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Enable spellchecking.tmPreferences" />
+                </Component>
+                <Component Id="cmp814D5F19AF83F35FAB7E07404D7729BF" Guid="{9DCAE3F7-F7A0-4AD2-9B08-8F75E7A0A039}">
+                    <File Id="filEB5F157875D97C226AF8A1AFF994FE5C" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Highlight pairs (comments).tmPreferences" />
+                </Component>
+                <Component Id="cmpA6370DC381F30465C217BD7D08FFED7C" Guid="{52F090DA-3942-4D2C-86FD-053B62B53210}">
+                    <File Id="filFA431370DDB5CAD2CF389BED413D74AE" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Highlight pairs.tmPreferences" />
+                </Component>
+                <Component Id="cmp8769A8B9FE0F30B5E511905D6062F91E" Guid="{C99F0159-B35A-4AE4-ABD8-A3958B4A13F4}">
+                    <File Id="fil91C30F7CEFC34AECBAB7E77A6B131F6F" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Indention rules.tmPreferences" />
+                </Component>
+                <Component Id="cmp7F43515B3AB1E7128799FC7127DF04FF" Guid="{4E18255C-D639-4A6B-9930-D86AFDE0E58D}">
+                    <File Id="fil2E068E0115D5B3B3AC73A481203609BB" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Simple Build Tool Symbol List.tmPreferences" />
+                </Component>
+                <Component Id="cmpA08645691A88E5FE0FB4562E2CAB06F5" Guid="{AC82634C-5EFF-41FE-8E31-C58E78E0B10E}">
+                    <File Id="fil8715DC2427C6A4F903DEDEC21C0D7131" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Standard completions.tmPreferences" />
+                </Component>
+                <Component Id="cmpC8A461488C39DF47DDCA42AB53BF6CEA" Guid="{CA20E6FB-6585-40F4-8968-7D3FBF65C565}">
+                    <File Id="fil7E3EA3CF4F6FEEEF42EE3CE1E392AAB8" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Symbol List.tmPreferences" />
+                </Component>
+                <Component Id="cmp827DA2684E9EBE52F3458CD43F9C4F63" Guid="{59ACD8DC-8910-4CAA-9F8F-90E0A8D46438}">
+                    <File Id="fil471D2EA65AC81EBFD7E86AE4270B1F81" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Typing pairs (comments).tmPreferences" />
+                </Component>
+                <Component Id="cmp057CCB4772C169CA06AEAB4E75D89B59" Guid="{0C208327-FBF9-4072-8C93-68E9CA73BCAD}">
+                    <File Id="filC1F8B4B92E163B923CF413ED83CCC34D" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Typing pairs.tmPreferences" />
+                </Component>
+                <Component Id="cmpD4BA58F2313075DB2C502729EFB66C8A" Guid="{4BDF8DC0-635A-4609-A3E5-ABCBC6857978}">
+                    <File Id="filF774811986AF1DB465B934F2A69F8696" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Preferences\Valid Scaladoc annotations.tmPreferences" />
+                </Component>
+            </Directory>
+            <Directory Id="dirC8780B58AC2CC52BB2F40901A19178E7" Name="Snippets">
+                <Component Id="cmpD642E79881EA72EF057E22A82A661DFE" Guid="{DEFA98B8-F9EB-4D42-AD5D-5F43953A70F4}">
+                    <File Id="fil1E8FFCE2D970BE02EF8B2DD79CE2E982" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\case class scaffolding.tmSnippet" />
+                </Component>
+                <Component Id="cmpC327A5C558A74B5DBBCF38302E461FC6" Guid="{34897E68-8974-4AB9-A31E-DE1E0CDEA7CD}">
+                    <File Id="fil0DE81776794D1FF2570BFB4527A408EA" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\case class.tmSnippet" />
+                </Component>
+                <Component Id="cmp7B05316FF3CA205A690308E7412E7322" Guid="{43A80FC3-D640-49AC-9CDB-1DCA6B278C3C}">
+                    <File Id="fil67D2BBCB2DC4BBCD9A5ACEC371DEC8EA" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\case.tmSnippet" />
+                </Component>
+                <Component Id="cmp1A66144D20CC4C14A3B03844DFD2003E" Guid="{12A114D5-1AFB-4A6E-B1CD-D7BF5097A146}">
+                    <File Id="filC1681CA8A2B68F3355C6580F94700951" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\class.tmSnippet" />
+                </Component>
+                <Component Id="cmp3F5B5DDBB98F3AB2CED5D0A9790828CB" Guid="{4967E7DA-1A1D-46CB-AEB2-8FA1AED10755}">
+                    <File Id="filB4B3126C1F0DAD0A9DCA3A52EFA192DD" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\enumeration.tmSnippet" />
+                </Component>
+                <Component Id="cmp1734613F75BE8AFFD56E225DA661967B" Guid="{C7CA12E1-2827-41D3-B3A6-5D6FCE4C5AD7}">
+                    <File Id="fil2E9FC298B424D83DD2C195683924AAC2" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\for - Block.tmSnippet" />
+                </Component>
+                <Component Id="cmpC89CD79C5C7F532F0BB1D3A143B8ED20" Guid="{374BA7F4-29BF-4222-BB60-AC63A08839D7}">
+                    <File Id="fil771A213E2CD16035D4984A0A35B04F4B" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\for - Yield.tmSnippet" />
+                </Component>
+                <Component Id="cmp65A257DD7B54A1C0A53480B512E38FBF" Guid="{D6179FF0-FED2-4CE3-B51B-483AC6188C65}">
+                    <File Id="fil909D6ADEE8101CD265BEDA796ECB9BA0" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\if.tmSnippet" />
+                </Component>
+                <Component Id="cmp0F3637FF943B93DF0E2E1202684A1C82" Guid="{F3007BAD-8656-4588-AA57-B7F3918541B0}">
+                    <File Id="fil5A1D966BE85C72DA01C5DF32406C221F" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\lambda.tmSnippet" />
+                </Component>
+                <Component Id="cmp31EFA214A6C41EF9A4AC4A2FA3480BE8" Guid="{5F9EB469-2F05-44E1-AD74-FE7D02AA05E8}">
+                    <File Id="fil1747A7FA26CA38662C429D3289FDAE2D" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\left arrow.tmSnippet" />
+                </Component>
+                <Component Id="cmpFD3DD322573DFDBF0CCFFAF924723CBF" Guid="{EA11A050-2348-48CB-9012-FA17054B566A}">
+                    <File Id="fil3A6456C798362D13DB987C31411F52FC" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\main.tmSnippet" />
+                </Component>
+                <Component Id="cmp55897039CFA86327EC13EBCFEEB8089B" Guid="{F8E3A49C-02C7-48EF-A486-CC43B3D1B79E}">
+                    <File Id="fil9A98BF58890DF47DAF03044B0EDD06C9" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\match.tmSnippet" />
+                </Component>
+                <Component Id="cmpA231C31D01DE7A13ECAEA81E40ECD920" Guid="{0F77BEF5-602B-4EE8-9825-AEF702F1DF82}">
+                    <File Id="filE0D3293D9307EA3F108D2A82146D13AF" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\method.tmSnippet" />
+                </Component>
+                <Component Id="cmp163894C637B5AC06F1FB404623A1BC29" Guid="{EDE174EB-E112-4F2A-9BD5-B6B45C294290}">
+                    <File Id="filF2E90E98D7F61750D370F64E0E127AB2" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\object with main method.tmSnippet" />
+                </Component>
+                <Component Id="cmpBB4D276C34C9EA75EED34F59ED0F684E" Guid="{E25F9CBB-2622-4F80-ACFE-90F0DF81A2CF}">
+                    <File Id="filD807E0014704594A1B445D5E32AE324C" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\object.tmSnippet" />
+                </Component>
+                <Component Id="cmp65C64A167A285D0D81C90F58A736E900" Guid="{9EE88544-EFA3-4407-ADAD-8745E0DDF178}">
+                    <File Id="fil8BAFDA58D6B521CC8BB094D34574F729" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\println.tmSnippet" />
+                </Component>
+                <Component Id="cmp6DF919096B5A616DE1BEAF67C63D21A8" Guid="{8399C7CA-6C97-4437-A3E0-FE0CD7CC8545}">
+                    <File Id="fil6846F6FB6FB728B3576D33E7B3D651EA" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\right arrow.tmSnippet" />
+                </Component>
+                <Component Id="cmpC0FF3CA363352D988D3DCF279218AF7D" Guid="{1B5F567C-FBAB-4868-B584-0665CC09271C}">
+                    <File Id="filE361007BCD51CAAC3C6CECF8D05D10CB" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\script header.tmSnippet" />
+                </Component>
+                <Component Id="cmpE015BAF11069E341A2AA9C9EA9761B9B" Guid="{95DA47B8-720C-4EB8-91C1-893E32E225F0}">
+                    <File Id="fil6ECF782C11677171913917F8AC8FB978" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - case class.tmSnippet" />
+                </Component>
+                <Component Id="cmpC7ED7F7D67DB1C50C7936857B90667AD" Guid="{48F6A01F-9EBB-42DB-B912-201656E72F0B}">
+                    <File Id="filDE89ECBAEC6C2A804286BBA5FD6121EC" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - class.tmSnippet" />
+                </Component>
+                <Component Id="cmpFC3FE18C0181E226A3FFB9BC5E2DA2B5" Guid="{C733CB3D-1711-4E3F-BA20-E23C9311B383}">
+                    <File Id="fil946DA171F8CE68AFA44F607D403B6A3A" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - enumeration.tmSnippet" />
+                </Component>
+                <Component Id="cmpD6C69F4AC5D2D6C66A9E59CC623F8419" Guid="{F3AFD887-5F22-4FC8-9B66-605D900E1A4C}">
+                    <File Id="fil475681F471B64B314D76737B6D775794" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - match.tmSnippet" />
+                </Component>
+                <Component Id="cmpAD0FCB350217115CC5E82758D1B4063C" Guid="{FEEF0C91-396B-4CFA-9840-6AF17A68E1D8}">
+                    <File Id="fil8531D999974E005C6B878C03418237D6" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - object.tmSnippet" />
+                </Component>
+                <Component Id="cmp41B0E76477838AB6E637CA5D6EB9915A" Guid="{717EAB45-2D85-44B3-8778-0BA048124EC1}">
+                    <File Id="fil655078676A098092973D96A412D0707C" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\shortcut - trait.tmSnippet" />
+                </Component>
+                <Component Id="cmp7E38A198DDB1865E5A00E454CE1BF548" Guid="{F14A537D-4F44-4069-8924-5C1E253C3C33}">
+                    <File Id="fil975776A70F3F17F59C14850BE59C1C41" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\toString.tmSnippet" />
+                </Component>
+                <Component Id="cmp806A555082863A144C49C7B9A2F79AAC" Guid="{E6F5A63D-D25F-4FE0-9AA2-1C5B96C219C0}">
+                    <File Id="filE564FC3EBF7FD35AC0AE1C991A52A666" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\trait.tmSnippet" />
+                </Component>
+                <Component Id="cmp78F80AC6CD1358784975177BF1E9234A" Guid="{5E15D4C6-AC59-443C-9D4C-8D6D898870BB}">
+                    <File Id="fil056E8DE75C0C81DA3D1D462771A3A8D9" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Snippets\with.tmSnippet" />
+                </Component>
+            </Directory>
+            <Directory Id="dir932E6E760C104BEEA9792EC2AE92B161" Name="Support">
+                <Component Id="cmpB0ADB740DEDDC95F73A1D652AF27875A" Guid="{1ABC37E7-A259-4AD3-B19B-2482AD1B0418}">
+                    <File Id="filC3FDCD93C55B96D0D2998702E4203C7D" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\scala_repl.sh" />
+                </Component>
+                <Directory Id="dirB6D841B93FBF1F0BC0C253372BCCB103" Name="tests">
+                    <Component Id="cmpA877CDCD68CCB0AEBD1AB45E99E1CC9E" Guid="{A4C15EBB-BA6D-4A3B-9B8A-772619943D1A}">
+                        <File Id="filAAF8080B06F8DBC69D6B94314042AD4C" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\gtm" />
+                    </Component>
+                    <Component Id="cmpF639F2EF596EDA47A4A4DD21570478D3" Guid="{9381220B-3D9C-4F26-9AC4-4D9CEE82ADE0}">
+                        <File Id="fil13EE62F4C3F55696B2DF2129D6EFB9D8" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\README" />
+                    </Component>
+                    <Component Id="cmpD801FD742666BE4EF38929482C1EFD49" Guid="{43833D36-3EC9-4E2A-8F4A-1A9575C0B681}">
+                        <File Id="filCEB2EFEF3A9114D0680620FC8BBACC97" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\run_tests.rb" />
+                    </Component>
+                    <Directory Id="dir6742E8CEEFD8C9C6A4D941F5B9C68122" Name="input">
+                        <Component Id="cmpD330BDD74162053CDD5FB547E5B78663" Guid="{AC6EDC30-A1BC-4F4E-B37D-B8B617583A37}">
+                            <File Id="fil3639F8AAA848B95135B05DAAE260B0F5" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\class.scala" />
+                        </Component>
+                        <Component Id="cmp9E7747139EF2018D5FEFB378F8374895" Guid="{E5A29CF9-1EFA-481B-9EE8-6A434277FE5E}">
+                            <File Id="filE6B78C01D794B232AC516F27603602B0" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\identifiers.scala" />
+                        </Component>
+                        <Component Id="cmpD4F07586E36E9A2035877B5DF790BEB6" Guid="{50086189-AC52-4288-AD8C-53011249D867}">
+                            <File Id="fil9D9E55B7334AB064AC2297AA405093E7" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\import.scala" />
+                        </Component>
+                        <Component Id="cmp725E0ACA2D46A80B53B1BD7C374F0E87" Guid="{53123C68-9F72-411E-97C1-23B5ABB1AA17}">
+                            <File Id="fil72D5AE5700F144C6BB7D6D8058C5D6FE" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\import2.scala" />
+                        </Component>
+                        <Component Id="cmpA4C508288029360625A0389A1AE5754A" Guid="{41DB7CAE-8328-41EB-ACFA-EE3E901697A4}">
+                            <File Id="fil1E97BEB87669B3EFDB8A12057D8F8907" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\import3.scala" />
+                        </Component>
+                        <Component Id="cmp25E2F4F51C5514F6B98AE93C486C5591" Guid="{81BF203E-B403-418D-8C83-9E42688768D2}">
+                            <File Id="fil8404D30065A88A917BCC13120D8B82E5" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\input\method.scala" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirAD7B1432C12DE79AFB4B1D70A37951A4" Name="output">
+                        <Component Id="cmp838DFF0FE6E13A583DA14CC877CFAF3C" Guid="{B26029F1-F4C4-47AB-9E64-62C447A6EBDF}">
+                            <File Id="filFDD4ECA3FE74363CD46E7B0021BB7A4A" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\class.output" />
+                        </Component>
+                        <Component Id="cmpA630711BA70DCE1E15CA6196D75B296D" Guid="{599DEB91-582E-42A3-8F57-75206363AF51}">
+                            <File Id="fil123BF23A5A5741A31D117BAA59DC95BA" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\identifiers.output" />
+                        </Component>
+                        <Component Id="cmpF66E0D7E5959627BE3E9B240A4CB4CC7" Guid="{CA5793C5-6F58-4078-96B2-15F4E2EFC9F2}">
+                            <File Id="fil0D766AD1FCF742ADA14878C4F2752883" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\import.output" />
+                        </Component>
+                        <Component Id="cmpC4F4911EFA66EE6169A7CF2EEB1A3D7A" Guid="{D288ADD6-0E1A-402B-9B04-A58B006842BA}">
+                            <File Id="fil9064EB3F6FF4DE25B8820E3B8F5F137C" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\import2.output" />
+                        </Component>
+                        <Component Id="cmpE15C0260FAB0AB2DDEEE536168DEEE7B" Guid="{2FC99361-063C-42E8-A911-2CD4BC5A6768}">
+                            <File Id="fil492402ED8370B01F8B8E75C2B5B59531" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\import3.output" />
+                        </Component>
+                        <Component Id="cmpD26647BAB7F91490E595A6F3A2013E60" Guid="{77C4748D-0249-4D61-8E44-C7946D13E61C}">
+                            <File Id="filEB7B5098B50D014A54D3EF4DD907AD1E" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Support\tests\output\method.output" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="dirEF7158215E1B60A832038C8643D1B381" Name="Syntaxes">
+                <Component Id="cmpACE70C21486F34C887E7AECB8128A12F" Guid="{6A1F9E33-9CCC-4B8F-A6C9-3BE4ED654DA6}">
+                    <File Id="filB0922C33A16C0D3A6FC127D2A9695016" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Syntaxes\Scala.tmLanguage" />
+                </Component>
+                <Component Id="cmp38E42719B1854D5A3D7FADB0EBD8B54F" Guid="{24938F01-6D29-4A66-8E8E-281374357242}">
+                    <File Id="filB867A7FCCD328C97E7DE0A76774C4EEC" KeyPath="yes" Source="$(var.Scala.tmbundle.ProjectDir)\Syntaxes\Simple Build Tool.tmLanguage" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="Scala.tmbundle">
+            <ComponentRef Id="cmp396CB075FD22F20C53C11BB93C0A3F8D" />
+            <ComponentRef Id="cmp68770A47D10856CE6EAA0D95AE3E9E43" />
+            <ComponentRef Id="cmpFBA57D98C9709C1D54FCD23D5ADE4A5B" />
+            <ComponentRef Id="cmpBC07E6BA216B0565B4692312C50F7805" />
+            <ComponentRef Id="cmp6E0177428401F4E9ABD90DFAC9CDE344" />
+            <ComponentRef Id="cmp41568F7CFF27ACFA948508FC0F9ECEF4" />
+            <ComponentRef Id="cmp64EB83835F97C63D86ACCFB3724AF306" />
+            <ComponentRef Id="cmp73E222E91FB1529D3972A40F24B531AE" />
+            <ComponentRef Id="cmp59A65CB33B77F64C4A9B751EEC3FBF3D" />
+            <ComponentRef Id="cmp1E1D15B933E0A5E90BEE92C9888C9604" />
+            <ComponentRef Id="cmp5FA01F56431D79E4F327EEB9F626711B" />
+            <ComponentRef Id="cmpDABB72FE12EB4A33BFB0D04FD5A6B4FB" />
+            <ComponentRef Id="cmpEB0D1383E8AEF932A04E73CD986570BF" />
+            <ComponentRef Id="cmp9B9B7997A823CCE63B3C6416017324D9" />
+            <ComponentRef Id="cmp6119168D0748C9D8F4FE4B80AD2E0C9E" />
+            <ComponentRef Id="cmp143BBA546F8862995203BBEFAE6638BE" />
+            <ComponentRef Id="cmp814D5F19AF83F35FAB7E07404D7729BF" />
+            <ComponentRef Id="cmpA6370DC381F30465C217BD7D08FFED7C" />
+            <ComponentRef Id="cmp8769A8B9FE0F30B5E511905D6062F91E" />
+            <ComponentRef Id="cmp7F43515B3AB1E7128799FC7127DF04FF" />
+            <ComponentRef Id="cmpA08645691A88E5FE0FB4562E2CAB06F5" />
+            <ComponentRef Id="cmpC8A461488C39DF47DDCA42AB53BF6CEA" />
+            <ComponentRef Id="cmp827DA2684E9EBE52F3458CD43F9C4F63" />
+            <ComponentRef Id="cmp057CCB4772C169CA06AEAB4E75D89B59" />
+            <ComponentRef Id="cmpD4BA58F2313075DB2C502729EFB66C8A" />
+            <ComponentRef Id="cmpD642E79881EA72EF057E22A82A661DFE" />
+            <ComponentRef Id="cmpC327A5C558A74B5DBBCF38302E461FC6" />
+            <ComponentRef Id="cmp7B05316FF3CA205A690308E7412E7322" />
+            <ComponentRef Id="cmp1A66144D20CC4C14A3B03844DFD2003E" />
+            <ComponentRef Id="cmp3F5B5DDBB98F3AB2CED5D0A9790828CB" />
+            <ComponentRef Id="cmp1734613F75BE8AFFD56E225DA661967B" />
+            <ComponentRef Id="cmpC89CD79C5C7F532F0BB1D3A143B8ED20" />
+            <ComponentRef Id="cmp65A257DD7B54A1C0A53480B512E38FBF" />
+            <ComponentRef Id="cmp0F3637FF943B93DF0E2E1202684A1C82" />
+            <ComponentRef Id="cmp31EFA214A6C41EF9A4AC4A2FA3480BE8" />
+            <ComponentRef Id="cmpFD3DD322573DFDBF0CCFFAF924723CBF" />
+            <ComponentRef Id="cmp55897039CFA86327EC13EBCFEEB8089B" />
+            <ComponentRef Id="cmpA231C31D01DE7A13ECAEA81E40ECD920" />
+            <ComponentRef Id="cmp163894C637B5AC06F1FB404623A1BC29" />
+            <ComponentRef Id="cmpBB4D276C34C9EA75EED34F59ED0F684E" />
+            <ComponentRef Id="cmp65C64A167A285D0D81C90F58A736E900" />
+            <ComponentRef Id="cmp6DF919096B5A616DE1BEAF67C63D21A8" />
+            <ComponentRef Id="cmpC0FF3CA363352D988D3DCF279218AF7D" />
+            <ComponentRef Id="cmpE015BAF11069E341A2AA9C9EA9761B9B" />
+            <ComponentRef Id="cmpC7ED7F7D67DB1C50C7936857B90667AD" />
+            <ComponentRef Id="cmpFC3FE18C0181E226A3FFB9BC5E2DA2B5" />
+            <ComponentRef Id="cmpD6C69F4AC5D2D6C66A9E59CC623F8419" />
+            <ComponentRef Id="cmpAD0FCB350217115CC5E82758D1B4063C" />
+            <ComponentRef Id="cmp41B0E76477838AB6E637CA5D6EB9915A" />
+            <ComponentRef Id="cmp7E38A198DDB1865E5A00E454CE1BF548" />
+            <ComponentRef Id="cmp806A555082863A144C49C7B9A2F79AAC" />
+            <ComponentRef Id="cmp78F80AC6CD1358784975177BF1E9234A" />
+            <ComponentRef Id="cmpB0ADB740DEDDC95F73A1D652AF27875A" />
+            <ComponentRef Id="cmpA877CDCD68CCB0AEBD1AB45E99E1CC9E" />
+            <ComponentRef Id="cmpF639F2EF596EDA47A4A4DD21570478D3" />
+            <ComponentRef Id="cmpD801FD742666BE4EF38929482C1EFD49" />
+            <ComponentRef Id="cmpD330BDD74162053CDD5FB547E5B78663" />
+            <ComponentRef Id="cmp9E7747139EF2018D5FEFB378F8374895" />
+            <ComponentRef Id="cmpD4F07586E36E9A2035877B5DF790BEB6" />
+            <ComponentRef Id="cmp725E0ACA2D46A80B53B1BD7C374F0E87" />
+            <ComponentRef Id="cmpA4C508288029360625A0389A1AE5754A" />
+            <ComponentRef Id="cmp25E2F4F51C5514F6B98AE93C486C5591" />
+            <ComponentRef Id="cmp838DFF0FE6E13A583DA14CC877CFAF3C" />
+            <ComponentRef Id="cmpA630711BA70DCE1E15CA6196D75B296D" />
+            <ComponentRef Id="cmpF66E0D7E5959627BE3E9B240A4CB4CC7" />
+            <ComponentRef Id="cmpC4F4911EFA66EE6169A7CF2EEB1A3D7A" />
+            <ComponentRef Id="cmpE15C0260FAB0AB2DDEEE536168DEEE7B" />
+            <ComponentRef Id="cmpD26647BAB7F91490E595A6F3A2013E60" />
+            <ComponentRef Id="cmpACE70C21486F34C887E7AECB8128A12F" />
+            <ComponentRef Id="cmp38E42719B1854D5A3D7FADB0EBD8B54F" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
