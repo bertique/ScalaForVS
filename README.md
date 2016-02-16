@@ -20,4 +20,5 @@ The first goal will be to be able to open a Scala project, get syntax highlighti
 * Add build support for scala compiler
 
 ## Resources
+* [Adding Visual Studio language support through TextMate bundles](http://timsneath.com/haskell-and-vs2015/)
 * [VS Project system documentation](https://github.com/Microsoft/VSProjectSystem)
